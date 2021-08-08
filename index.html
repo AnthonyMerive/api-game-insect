@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./style/styles.css">
     <title>Atrapa al insecto</title>
 </head>
+
 <body>
     <div class="screen">
         <h1>ATRAPA AL INSECTO</h1>
@@ -38,12 +40,33 @@
                 </button>
             </li>
         </ul>
-    </div>
-    <div class="screen up">
-        <h1>Catch The Insect</h1>
-        <button class="btn" id="start-btn">Play Game</button>
+
+        <!-- Etiqueta temporal-->
+        <div class="screen up">
+            <h1>Atrapa al insecto</h1>
+            <button class="btn" id="start-btn">Jugar</button>
+        </div>
+        <!----------------------->
+
+        <!--Estructura para controlar cantidad de tiempo e insectos acumulados-->
+        <div class="screen " id="game-container">
+            <h3 id="time" class="time"> Tiempo: 00:00</h3>
+            <h3 id="score" class="score"> Puntaje: 0</h3>
+            <!--selector visible es temporal-->
+            <a id="message" class="message visible">
+            <!-------------------------------->    
+                ¿Sigues ahi?<br>
+                ¡Juegas algo imposible!
+            </a>
+        </div>
+        <!-- Etiqueta temporal para controlar insecto-->
+        <div class="insect caught">
+            <img src="http://pngimg.com/uploads/roach/roach_PNG12146.png" alt="">
+        </div>
+        <!----------------------->
     </div>
 
 </body>
 <script src="script/script.js"></script>
+
 </html>
