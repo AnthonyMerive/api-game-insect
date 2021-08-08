@@ -93,9 +93,9 @@ h1{
 }
 
 .time,
-.score{
-    position:absolute;
-    top:20px;
+.score {
+    position: absolute;
+    top: 20px;
 }
 
 .time{
