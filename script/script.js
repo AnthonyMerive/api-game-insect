@@ -1,8 +1,8 @@
-const screens = document.querySelectorAll('.screen');
+const screens = document.querySelectorAll('.screen')
 
-const choose_insects_btns = document.querySelectorAll('.choose-instect-btn')
-const start_btn = document.getElementById('start_btn')
-const game_container = document.getElementById('game_container')
+const choose_insects_btns = document.querySelectorAll('.choose-insect-btn')
+const start_btn = document.getElementById('start-btn')
+const game_container = document.getElementById('game-container')
 
 const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
@@ -79,20 +79,8 @@ function increaseScore(){
     if(score >19){
         massage.classList.add('visible')
     }
-    scoreEl.innerHTML = `Score: ${score}`
+    scoreEl.innerHTML = `Puntos: ${score}`
 }
 
 message.addEventListener('click',()=> screens[1].classList.remove('up'))
 
-function addInsects(){
-    setTimeout(createInsect,3000)
-    setTimeout(createInsect,2500)
-}
-
-function increaseScore(){
-    score++
-    if(score >19){
-        massage.classList.add('visible')
-    }
-    scoreEl.innerHTML = `Score: ${score}`
-}
