@@ -76,11 +76,11 @@ function addInsects(){
 
 function increaseScore(){
     score++
-    if(score >19){
-        massage.classList.add('visible')
+    if(score >50){
+        message.classList.add('visible')
     }
     scoreEl.innerHTML = `Puntos: ${score}`
 }
 
-message.addEventListener('click',()=> screens[1].classList.remove('up'))
+
 
